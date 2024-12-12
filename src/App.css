@@ -1,0 +1,60 @@
+.header {
+  background-color: rgb(241, 239, 225);
+  height:fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(17px);
+  color: darkgoldenrod;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.cart-icon i {
+  margin-right: 5px; /* Espaçamento entre o ícone e o número */
+}
+
+.WineList {
+  display: flex; /* Usar flexbox para alinhar os cards */
+  flex-wrap: wrap; /* Permitir que os cards se movam para a próxima linha */
+  justify-content: center; /* Centralizar os cards */
+  margin: 20px; /* Margem ao redor da lista de vinhos */
+}
+
+.wine-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px; /* Margem entre os cards */
+  text-align: center;
+  width: 200px; /* Largura fixa para os cards */
+  height: auto; /* Altura automática */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ajuda a distribuir o espaço */
+  transition: 200ms;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.wine-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wine-card a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: inherit; /* Usa a cor do texto pai */
+}
+
+.wine-card a:hover {
+  color: darkgoldenrod; /* Muda a cor ao passar o mouse */
+}
+
